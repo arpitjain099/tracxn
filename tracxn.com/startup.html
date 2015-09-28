@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<!-- Mirrored from tracxn.com/startup by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Sep 2015 17:38:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet"
+	href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+
+<title>Tracxn | List Yourself!</title>
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+    <meta name="layout" content="homepage-header">
+    <link href='http://fonts.googleapis.com/css?family=Bitter'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../s3.amazonaws.com/tracxnassets/assets/tracxn-1.1/startup-index-0b9ca044963161e57cb79f86d0f891b7.css"/>
+
+</head>
+<body class="">
+	<div id="wrap">
+		
+<div style="margin-top: 10px;" class="pull-left">
+    <a href="index.html" >
+        <img width=27%" class="img-responsive logo-margin" src="../s3.amazonaws.com/tracxnassets/assets/static/images/tracxn_logo_new.png">
+    </a>
+</div>
+<div style="height: 50px; background: #ffffff;">
+    
+    
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog loginmodal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<div class="container text-center">
+					<span class="login-header">LOGIN</span>
+					<div class="alert alert-danger login-message"></div>
+					<form action="http://tracxn.com/startup/ajaxLoginForm" method="post" name="ajaxLoginForm" role="form" autocomplete="off" class="text-primary" id="ajaxLoginForm" >
+						<div class="form-group form-group-email ">
+							<input type="email"
+								class="form-control" name='j_username' id='username'
+								placeholder="Enter email">
+						</div>
+						<div class="form-group">
+							<input type="password"
+								class="form-control" name='j_password' id='password'
+								placeholder="Password">
+						</div>
+						
+						<input type="submit" update="updateMe" class="preview btn-block" id="loginButton" value="LOGIN" name="Login" onclick="authAjax();return false;" />
+						<div class="row">	
+							<div class="checkbox col-md-6">
+								<label>
+									<input type="checkbox" id='remember_me' name='_spring_security_remember_me' checked> Remember Me
+								</label>
+							</div>
+							<div class="col-md-6 forgot-password">
+                                <a class="pull-right" href="login/forgotPassword.html" onclick="this.href=this.href+'?email='+$('#username').val()">Forgot password?</a>
+							</div>
+						</div>
+					</form>
+					<div id='loginMessage'></div>
+				</div>
+				<!-- /container -->
+			</div>
+			<!--  <div class="modal-footer">
+			       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			      </div> -->
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+    <div id="signUpModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×</button>
+            </div>
+
+
+
+            <div class="modal-body no-padding">
+                <div class="container text-center">
+                    <span class="login-header">Register</span>
+                    <div class="alert alert-danger register-message" id="signUp-info"></div>
+                    <div class="text-center">
+                        <img class="signUp-img" src="../s3.amazonaws.com/tracxnassets/assets/static/images/spinner.gif">
+                    </div>
+                    <form class="cssform center-it text-left">
+                        <span class="block input-icon input-icon-right">
+                            <input type="text" class="form-control" placeholder="Enter Your Official Email Address" name="signUp-email" id="signUp-email" />
+                        </span>
+							<input type="submit" update="updateMe" class="loginButton btn-block" gid="signUp" value="SIGN UP" name="signUp" onclick="sectorsignup(this);return false;" id="signUp" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../s3.amazonaws.com/tracxnassets/assets/tracxn-1.1/tracxn-21160466b2e460074a98790a6fe1e791.js" type="text/javascript" ></script>
+
+<div class="row ">
+    
+	<div class="pull-right home-top-buttons-div">
+		
+		<div class="pull-left login home-top-button" onclick="window.open('blog.html', '_blank');">
+			BLOG
+		</div>
+        <div class="pull-left login home-top-button" onclick="window.open('http://www.iimjobs.com/search/Tracxn', '_blank');">
+            CAREERS
+        </div>
+		
+
+			<div class="login pull-left  home-top-button" data-toggle="modal"
+				data-target="#signUpModal"
+				onclick="clearSignUp();focusModalInputById('signUp-email')">SIGN
+				UP</div>
+			<div class="login pull-left home-top-button" data-toggle="modal"
+				data-target="#loginModal" onclick="focusModalInputById('username')">LOGIN</div>
+		
+		
+	</div>
+</div>
+
+</div>
+<!--  Header Ends -->
+
+<hr class="hr-center-thick background-image">
+
+
+<div class="container startupdb-glow-container">
+    <div class="border-top-down"></div>
+    <div class="row clearfix startupdb-glow">
+        <div class="package-header text-center">
+            <h2 class="list-yourself-heading" style="font-weight: bold">List Your Startup</h2>
+        </div>
+        <div class="col-md-12 col-no-pad">
+            <form id="domain-form" method="post">
+                
+                <span class="text-muted">&nbsp;Check if we have already covered your startup</span>
+                <div class="input-group search-field center-it">
+                    <input type="text" class="form-control " id="domainName" name="id" value="" placeholder="Eg: tracxn.com">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">Go!</button>
+                    </span>
+                </div>
+            </form>
+
+
+        
+
+
+
+            
+        </div>
+    </div>
+
+</div>
+<div class="container">
+    <div class="border-top-down"></div>
+    <div class="row clearfix">
+        <h3 class="text-center">FAQs</h3>
+        <div class="col-md-6">
+            <h5 class="subTitle">Why list your startup (or your favorite startup)?</h5>
+            <p>We work with leading venture funds to help them discover highly investable startups. Listing your startup here will enable us to highlight your startup to the 500+ investors who use our platform for deal discovery.</p>
+        </div>
+        <div class="col-md-6">
+            <h5 class="subTitle">Can I change my information?</h5>
+        <p>We are soon launching Founder's login. This will help founders to update their startup's information at our platform.</p>
+        </div>
+        <h1></h1>
+
+    </div>
+</div>
+<h1></h1>
+<div class="home-footer-div">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<div class="pagefont-big home-footer-heading">
+                    CONTACTS
+				</div>
+			</div>
+
+			<div class="text-center social-box-div">
+				<table class="social-box">
+					<tr>
+						<td class="social">
+							<div id="hi" class="fa fa-envelope" data-toggle="popover"
+								data-placement="top"></div>
+						</td>
+						
+						<td class="social"><a
+							target="_blank" href="https://twitter.com/tracxn"><i
+								class="fa fa-twitter"></i></a></td>
+						<td class="social"><a
+							target="_blank" href="https://www.facebook.com/Tracxn"><i
+								class="fa fa-facebook"></i></a></td>
+						<td class="social"><a target="_blank"
+							href="http://www.linkedin.com/company/tracxn"><i
+								class="fa fa-linkedin"></i></a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class=" text-center agreement-div">
+		<div class="text-center">
+			<a class="agreement-link"
+				type="button" onclick="getUserAgreement()"><h5>Privacy &
+					Terms</h5></a>
+		</div>
+	</div>
+</div>
+<div id="agreement" class="mytheme modal fade" tabindex="-1">
+	<div class="modal-dialog edit-company-modal">
+		<div class="modal-content">
+			<div class="modal-header no-padding"></div>
+		</div>
+	</div>
+</div>
+<script src="../s3.amazonaws.com/tracxnassets/assets/tracxn-1.1/startup-index-7eec64c37b9e133e690d3738b63459e5.js" type="text/javascript" ></script>
+<div class="modal fade" id="success-response" tabindex="-1"
+     role="dialog" aria-labelledby="success-response" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body text-muted text-center">
+                <div>Thanks for interest in Tracxn. We will update your company in our feeds</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+		
+	</div>
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41952435-1', 'tracxn.com');
+  ga('send', 'pageview');
+
+$(document).ready(logUrls);
+$(window).on('hashchange', logUrls);
+
+function logUrls(){
+    var title = $(document).find("title").text();
+    var url = location.href;
+    var inputJson = { "title" :title ,"url" :url};
+    $.ajax({
+        cache: false,
+        crossDomain: false,
+        url: "/monitor/logUrl",
+        async: false,
+        type:"POST",
+        data: JSON.stringify(inputJson),
+        dataType: 'json',
+        contentType: "application/json; charset=utf-8",
+
+        beforeSend:function(){
+            console.log("before sending request")
+        },
+        complete:function(event, xhr, options){
+            console.log("complete")
+        },
+        success:function(result){
+            console.log("Updated Successfully");
+        },
+        error: function(XHR, textStatus, errorThrown) {
+            console.log("error " + XHR.status)
+        }
+    });
+} 
+</script>
+
+
+
+</body>
+
+<!-- Mirrored from tracxn.com/startup by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Sep 2015 17:38:11 GMT -->
+</html>

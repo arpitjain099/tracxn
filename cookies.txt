@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+tracxn.com	TRUE	/	FALSE	1999999999	PHPSESSID	nur30ssi7b2l4i8knj08ot1dn6
+tracxn.com	TRUE	/	FALSE	1999999999	JSESSIONID	5BED40AC2258552EAED9D2AB55DB3B2B
+

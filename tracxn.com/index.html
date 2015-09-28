@@ -1,0 +1,2196 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<!-- Mirrored from tracxn.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Sep 2015 17:36:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet"
+	href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+
+<title>Tracxn - Technology & Data for Venture Capital, Corp
+    Dev, Investment Banks</title>
+
+        <!-- Meta Data ================ -->
+        <meta charset="UTF-8"/>
+        <meta name="description" content="At Tracxn, we track and curate millions of startups to help you track sectors of interest - Track anything from Enterprise Security, Internet of Things, 3D Printing, Bitcoin, to Mobile Payments or request any sector you would like to invest in."/>
+        <meta name="tags" content="Venture Capital, Corp Dev, Investment Bank, Technology, Big Data, Sector Scan"/>
+        <meta name="author" content="hi ~ tracxn ~ com"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <!-- Open Graph for facebook
+    ================================================== -->
+        <meta property="og:title" content=" Tracxn - Technology &amp; Data for Venture Capital, Corp Dev, Investment Banks">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="index.html">
+        <meta property="og:image" content="static/images/tracxn_logo_new.html">
+        <meta property="og:site_name" content="Tracxn!">
+        <meta property="fb:admins" content="tracxn">
+        <meta property="og:locale" content="en_us">
+        <meta property="og:description" content="At Tracxn, we track and curate millions of startups to help you track sectors of interest - Track anything from Enterprise Security, Internet of Things, 3D Printing, Bitcoin, to Mobile Payments or request any sector you would like to invest in.">
+
+        <meta name="layout" content="homepage-header">
+        <link href='http://fonts.googleapis.com/css?family=Bitter|Open+Sans|Nothing+You+Could+Do|Sniglet' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../s3.amazonaws.com/tracxnassets/assets/tracxn-1.1/home-97f5aff696ee8fb4705ce53ddf580dfc.css"/>
+
+</head>
+<body class="">
+	<div id="wrap">
+		
+    
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog loginmodal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<div class="container text-center">
+					<span class="login-header">LOGIN</span>
+					<div class="alert alert-danger login-message"></div>
+					<form action="http://tracxn.com/homepage/index/ajaxLoginForm" method="post" name="ajaxLoginForm" role="form" autocomplete="off" class="text-primary" id="ajaxLoginForm" >
+						<div class="form-group form-group-email ">
+							<input type="email"
+								class="form-control" name='j_username' id='username'
+								placeholder="Enter email">
+						</div>
+						<div class="form-group">
+							<input type="password"
+								class="form-control" name='j_password' id='password'
+								placeholder="Password">
+						</div>
+						
+						<input type="submit" update="updateMe" class="preview btn-block" id="loginButton" value="LOGIN" name="Login" onclick="authAjax();return false;" />
+						<div class="row">	
+							<div class="checkbox col-md-6">
+								<label>
+									<input type="checkbox" id='remember_me' name='_spring_security_remember_me' checked> Remember Me
+								</label>
+							</div>
+							<div class="col-md-6 forgot-password">
+                                <a class="pull-right" href="login/forgotPassword.html" onclick="this.href=this.href+'?email='+$('#username').val()">Forgot password?</a>
+							</div>
+						</div>
+					</form>
+					<div id='loginMessage'></div>
+				</div>
+				<!-- /container -->
+			</div>
+			<!--  <div class="modal-footer">
+			       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			      </div> -->
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+    <div id="signUpModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×</button>
+            </div>
+
+
+
+            <div class="modal-body no-padding">
+                <div class="container text-center">
+                    <span class="login-header">Register</span>
+                    <div class="alert alert-danger register-message" id="signUp-info"></div>
+                    <div class="text-center">
+                        <img class="signUp-img" src="../s3.amazonaws.com/tracxnassets/assets/static/images/spinner.gif">
+                    </div>
+                    <form class="cssform center-it text-left">
+                        <span class="block input-icon input-icon-right">
+                            <input type="text" class="form-control" placeholder="Enter Your Official Email Address" name="signUp-email" id="signUp-email" />
+                        </span>
+							<input type="submit" update="updateMe" class="loginButton btn-block" gid="signUp" value="SIGN UP" name="signUp" onclick="sectorsignup(this);return false;" id="signUp" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../s3.amazonaws.com/tracxnassets/assets/tracxn-1.1/tracxn-21160466b2e460074a98790a6fe1e791.js" type="text/javascript" ></script>
+
+<div class="row ">
+    
+		<div class="pull-left login hide home-top-button" onclick="location.href='products/pricing.html';">
+			PRICING
+		</div>
+
+    
+	<div class="pull-right home-top-buttons-div">
+		
+			<div class="pull-left">
+				<!--  @author: pari 13/05/15  -->
+				<div class="listYourselfLink login home-top-button" onclick="location.href='startup.html';">FOR FOUNDERS</div>
+			</div>
+		
+		<div class="pull-left login home-top-button" onclick="window.open('blog.html', '_blank');">
+			BLOG
+		</div>
+        <div class="pull-left login home-top-button" onclick="window.open('http://www.iimjobs.com/search/Tracxn', '_blank');">
+            CAREERS
+        </div>
+		
+
+			<div class="login pull-left  home-top-button" data-toggle="modal"
+				data-target="#signUpModal"
+				onclick="clearSignUp();focusModalInputById('signUp-email')">SIGN
+				UP</div>
+			<div class="login pull-left home-top-button" data-toggle="modal"
+				data-target="#loginModal" onclick="focusModalInputById('username')">LOGIN</div>
+		
+		
+	</div>
+</div>
+
+
+    <div class="text-center logo-adjust">
+        <div class="logo-box">
+            <div class="image-box">
+                <img class="img-responsive logo-center lazy" alt="Tracxn.com" title="Tracxn.com" data-src="http://s3.amazonaws.com/tracxnassets/assets/static/images/tracxn_logo_new.png" src="../s3.amazonaws.com/tracxnassets/assets/static/images/tracxn_logo_new.png" style="width: 150px">
+            </div>
+        </div>
+    </div>
+
+
+    <section style='background-image: url("../s3.amazonaws.com/tracxnassets/assets/static/images/background.jpg"); width: 100%; height: 520px;background-size: 100% 520px;'>
+            <div style="padding-top: 250px" class="row-pad-l20-r20 text-shadow-6">
+                <div class="row clearfix">
+                    <div class="col-md-12 text-center" style="color:#FFF">
+                        
+                        <h2 class=" f40 ">Startup Discovery Made Easy</h2>
+                        <!--<h4>For Venture Capital, Private Equity and Angel Investors</h4>-->
+                        <h4>Ideas | Validated, Accelerated, Funded</h4>
+                    </div>
+                </div>
+                <div>
+                
+                    <form class="col-md-12 pad-t20 text-center pad-b20 ">
+                        <input type="email" name="signUp-email" id="signUp-email" class="report-subs-input signuptext" placeholder="Enter your business email address" required>
+                        <input type="submit" class="subs-btn signupbtn" id="signUp" value="REGISTER" name="signUp" onclick="sectorsignupHomePage(this);return false;">
+                    </form>
+                    <div class="col-md-12 text-center hide successsignup"></div>
+                
+                
+                </div>
+            </div>
+    </section>
+
+    <section style="padding: 30px">
+         <h2 class="text-center pagefont-medium">
+            <a href="#sectors" class="hashLinks">Get noticed by <div class="clearfix">Venture Capitalists, Mentors, Angel Investors and Incubators</div></a><div class="clearfix">Early adopters, Beta testers, 
+        </h2>
+        <div class="container">
+            <div class="row clearfix text-center">
+             
+               <div class="col-md-10 col-md-offset-1">
+                   <div class="col-md-4 pad-t20 dealdiscovery">
+                        <img style="opacity: 0.8;" src="../s3.amazonaws.com/tracxnassets/assets/static/images/Deal-Sourcing.jpg" alt="Generic placeholder image" width="150" height="150">
+                        <h5 class="pagefont">DEAL DISCOVERY<br> AND SOURCING</h5>
+                        <hr class="hr-center-thick solid-2p">
+                        <p>Get 100+ curated startup profiles every week, scoured from dozens of sources</p>
+                   </div>
+                    <div class="col-md-4 pad-t20 hashLinks">
+                        <img style="opacity: 0.8;" src="../s3.amazonaws.com/tracxnassets/assets/static/images/Sector-Landscapes.jpg" alt="Generic placeholder image" width="150" height="150">
+                        <h5 class="pagefont">COMPREHENSIVE SECTOR LANDSCAPES</h5>
+                        <hr class="hr-center-thick solid-2p">
+                        <p>Get one of the most comprehensive startup landscapes across 100+ sectors</p>
+                    </div>
+                    <div class="col-md-4 pad-t20">
+                        <img style="opacity: 0.8;" src="../s3.amazonaws.com/tracxnassets/assets/static/images/Deligence-Support.jpg" alt="Generic placeholder image" width="150" height="150">
+                        <h5 class="pagefont">ON-DEMAND DEAL DILIGENCE SUPPORT</h5>
+                        <hr class="hr-center-thick solid-2p">
+                        <p>Custom deal diligence support with a quick turnaround of 4-5 days</p>
+                    </div>
+               </div>
+            </div>
+            <div class="pad-t50"></div>
+        </div>
+        <hr class="hr-center-thick solid-2p">
+    </section>
+
+    <section class="pad-t5" id="sectors">
+        <h2 class="text-center pagefont-medium">
+            <a href="#sectors" class="hashLinks">Sectors We Track</a>
+        </h2>
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-12 text-center pagefont">
+                    <p class="center-it p-howWeDo">
+                        Tracking 100+ Sectors and Counting!
+                    </p>
+                </div>
+                
+    <div class="row practiceArea-container" id="enterpriseinfrastructure">
+        <a href="#enterpriseinfrastructure" class="hashLinks"><h3 class="text-center pagefont-medium practiceArea-Heading">ENTERPRISE INFRASTRUCTURE</h3></a>
+        <hr class="hr-center-thick solid-2p practiceArea-line">
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Enterprise Security</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Enterprise Storage</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Enterprise Networking</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Cloud Infrastructure</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Enterprise Mobility</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">IT Operations</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Open Source</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">API Management</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Stealth Mode</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">BigData Infrastructure</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Docker Ecosystem</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">PaaS<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Operating Systems<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+    </div>
+
+    <div class="row practiceArea-container" id="enterpriseapplications">
+        <a href="#enterpriseapplications" class="hashLinks"><h3 class="text-center pagefont-medium practiceArea-Heading">ENTERPRISE APPLICATIONS</h3></a>
+        <hr class="hr-center-thick solid-2p practiceArea-line">
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile First Enterprise Apps</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">SaaS</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Enterprise Collaboration</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Sales Force Automation</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">MarketingTech</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">HRTech</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Finance &amp; Accounting</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Business Intelligence</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">BigData Apps<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Ecommerce Enablers</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">RetailTech</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Institutional Investors<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Software for Institutional Investors<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Legal Tech</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Call Center Software<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Customer Success Management<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Loyalty<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Customer Service Software</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">SCM Software</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Nonprofit Tech<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Event Management<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">PR Tech</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Field Force Automation</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">ERP<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">SMB SaaS<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Big Data Analytics<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+    </div>
+
+    <div class="row practiceArea-container" id="technology">
+        <a href="#technology" class="hashLinks"><h3 class="text-center pagefont-medium practiceArea-Heading">TECHNOLOGY</h3></a>
+        <hr class="hr-center-thick solid-2p practiceArea-line">
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Internet of Things Infrastructure</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Wearable Technology</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Smart Homes</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Smart Cars</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Industrial Internet of Things</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Smart Cities</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Semiconductors</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">3D Printing</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Consumer Robotics</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Industrial Robotics</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Drones</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Virtual Reality</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Natural User Interface</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Augmented Reality</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">NewSpace</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Blockchain Applications</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Deep Learning</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Computational Imaging<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Language Localization<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Geographic Information System<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Artificial Intelligence - Applications<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Artificial Intelligence - Infrastructure<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+    </div>
+
+    <div class="row practiceArea-container" id="consumer">
+        <a href="#consumer" class="hashLinks"><h3 class="text-center pagefont-medium practiceArea-Heading">CONSUMER</h3></a>
+        <hr class="hr-center-thick solid-2p practiceArea-line">
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">FoodTech</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Auto</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Online Travel</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Logistics</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">RealEstate Tech</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Online Retail<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Marketplaces</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">eRetail Marketplaces<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Internet First Brands</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Flash Sales</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Cross Border Commerce</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Product Discovery</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Local Shopping<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Second Hand Goods</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Online Rental</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile Communication</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Mobile Gaming<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Matchmaking</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile Commerce</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Subscription Commerce</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Sharing Economy</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">On Demand Services<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Birchbox for X<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Social Platforms<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Coupons and Deals</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Hyperlocal Delivery<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Transport Tech</div></a></div>
+            
+        
+    </div>
+
+    <div class="row practiceArea-container" id="mobile">
+        <a href="#mobile" class="hashLinks"><h3 class="text-center pagefont-medium practiceArea-Heading">MOBILE</h3></a>
+        <hr class="hr-center-thick solid-2p practiceArea-line">
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile DevTools</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile Payments</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile Marketing</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Mobile Gaming<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile Commerce</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile Communication</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Enterprise Mobility</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile First Enterprise Apps</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile Health</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile Education</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile Finance</div></a></div>
+            
+        
+    </div>
+
+    <div class="row practiceArea-container" id="fintech">
+        <a href="#fintech" class="hashLinks"><h3 class="text-center pagefont-medium practiceArea-Heading">FINTECH</h3></a>
+        <hr class="hr-center-thick solid-2p practiceArea-line">
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Payments</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Crowdfunding</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile Payments</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Remittance</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Bitcoin</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Consumer Finance</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Alternative Lending</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile Finance</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Robo Advisors</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Banking Tech<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Software for Institutional Investors<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Finance &amp; Accounting</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Investment Tech</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Insurance Tech</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Fraud &amp; Risk Management<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Prepaid &amp; Gift Cards</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Internet - India</div></a></div>
+            
+        
+    </div>
+
+    <div class="row practiceArea-container" id="digitalmarketing">
+        <a href="#digitalmarketing" class="hashLinks"><h3 class="text-center pagefont-medium practiceArea-Heading">DIGITAL MARKETING</h3></a>
+        <hr class="hr-center-thick solid-2p practiceArea-line">
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">AdTech</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">MarketingTech</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile Marketing</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Online Video</div></a></div>
+            
+        
+    </div>
+
+    <div class="row practiceArea-container" id="health">
+        <a href="#health" class="hashLinks"><h3 class="text-center pagefont-medium practiceArea-Heading">HEALTH</h3></a>
+        <hr class="hr-center-thick solid-2p practiceArea-line">
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Medical Devices</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile Health</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Healthcare IT<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Data Science in Healthcare<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Consumer HealthTech<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Pharma<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Biotech<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Fitness &amp; Wellness<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+    </div>
+
+    <div class="row practiceArea-container" id="education">
+        <a href="#education" class="hashLinks"><h3 class="text-center pagefont-medium practiceArea-Heading">EDUCATION</h3></a>
+        <hr class="hr-center-thick solid-2p practiceArea-line">
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile Education</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Collaborative Learning<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Online Tutoring<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">MOOCs<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Edutainment<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Adaptive Learning<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">K&ndash;12<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Professional Learning<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Test Preparation<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Higher Education<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Language Learning<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Cognitive Learning<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Education IT<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Special Learning<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Content Learning<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+    </div>
+
+    <div class="row practiceArea-container" id="geo-denmark">
+        <a href="#geo-denmark" class="hashLinks"><h3 class="text-center pagefont-medium practiceArea-Heading">GEO - DENMARK</h3></a>
+        <hr class="hr-center-thick solid-2p practiceArea-line">
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Consumer Digital - Denmark</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Enterprise Tech - Denmark</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">EdTech - Denmark<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">FinTech - Denmark<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">HealthTech - Denmark<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">AdTech - Denmark<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Technology - Denmark<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+    </div>
+
+    <div class="row practiceArea-container" id="geo-india">
+        <a href="#geo-india" class="hashLinks"><h3 class="text-center pagefont-medium practiceArea-Heading">GEO - INDIA</h3></a>
+        <hr class="hr-center-thick solid-2p practiceArea-line">
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Internet - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Mobile - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Marketplaces - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">AdTech - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">SaaS - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Enterprise Tech - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Technology - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">FinTech - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">EdTech - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">HealthTech - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Cross Border - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Food &amp; Beverage - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Finance - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Healthcare - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Education - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Consumer Goods - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Logistics - India<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Agriculture - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Pharma - India<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Media &amp; Entertainment - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Enterprise Services - India<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Travel &amp; Hospitality - India<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Outsourcing - India</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Manufacturing - India<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">CleanTech - India</div></a></div>
+            
+        
+    </div>
+
+    <div class="row practiceArea-container" id="geo-china">
+        <a href="#geo-china" class="hashLinks"><h3 class="text-center pagefont-medium practiceArea-Heading">GEO - CHINA</h3></a>
+        <hr class="hr-center-thick solid-2p practiceArea-line">
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Consumer Digital - China</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">AdTech - China<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">EdTech - China<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">FinTech - China<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Technology - China<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">HealthTech - China<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Enterprise - China<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+    </div>
+
+    <div class="row practiceArea-container" id="geo-southeastasia">
+        <a href="#geo-southeastasia" class="hashLinks"><h3 class="text-center pagefont-medium practiceArea-Heading">GEO - SOUTH EAST ASIA</h3></a>
+        <hr class="hr-center-thick solid-2p practiceArea-line">
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Consumer Digital - SEA</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Enterprise Tech - SEA</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">HealthTech - SEA</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">FinTech - SEA</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">AdTech - SEA</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">EdTech - SEA</div></a></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><a  class="no-underline-anchor" target="_blank" href="login/auth.html"><div class="btn btn-feeds btn-block">Technology - SEA</div></a></div>
+            
+        
+    </div>
+
+    <div class="row practiceArea-container" id="geo-uk">
+        <a href="#geo-uk" class="hashLinks"><h3 class="text-center pagefont-medium practiceArea-Heading">GEO - UK</h3></a>
+        <hr class="hr-center-thick solid-2p practiceArea-line">
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Consumer Digital - UK<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Enterprise Tech - UK<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">Technology - UK<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">EdTech - UK<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">AdTech - UK<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">HealthTech - UK<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+            
+                <div class="col-md-4 pad-bottom"><div class="btn btn-feeds-draft btn-block">FinTech - UK<span class="comingsoon">Coming Soon</span> </div></div>
+            
+        
+    </div>
+
+            </div>
+            <div class="pad-t50"></div>
+        </div>
+    </section>
+        
+    
+    <section id="latest-coverage">
+        <section class="pad-t5 background-image" id="carousel-marketMap">
+            <hr class="hr-center-thick solid-2p">
+            <div class="row ">
+                <div class="container">
+                    <h2 class="text-center pagefont-medium">
+                        <a href="#latest-coverage" class="hashLinks">DOWNLOAD OUR LATEST COVERAGE</a><i class="icon-works">
+                        <img class="section-seperator" src="static/images/homepage_images/icon-works.png"></i>
+                    </h2>
+                </div>
+            </div>
+            <div class="container">
+                
+                    <div class="row clearfix report-item ">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 column">
+                            <div class="row">
+                                <div class="col-md-3 report-date">
+                                    June 2015
+                                </div>
+                                <div id="23_name_homepage" class="col-md-6 pointer reportView"
+                                    
+                                        data-href="https://s3.amazonaws.com/tracxndocuments/OnlineRentalStartupLandscape_Jun-2015.pdf"
+                                         href="#report-modal-view"  data-target="#report-modal-view" data-toggle="modal" data-label="Online Rental Startup Landscape"
+                                    
+                                >
+                                    Online Rental Startup Landscape
+
+                                </div>
+                                <div class="col-md-3 download-report">
+                                
+                                    <span class="pointer link pull-right" data-href="https://s3.amazonaws.com/tracxndocuments/OnlineRentalStartupLandscape_Jun-2015.pdf" data-label="Online Rental Startup Landscape">
+                                        <i class="fa fa-download valign-m download"></i>
+                                        <span class="download-text">Download</span>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span href="#report-modal-view" id="23_view_homepage" data-label="Online Rental Startup Landscape" data-target="#report-modal-view" data-toggle="modal" class="pointer reportView " data-href="https://s3.amazonaws.com/tracxndocuments/OnlineRentalStartupLandscape_Jun-2015.pdf" data-label="Online Rental Startup Landscape" data-hint="View">
+                                        <i class="fa fa-eye valign-m view download"></i>
+                                        <span class="download-text">View</span>
+                                    </span>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+                    
+                        <hr class="hr-report">
+                    
+                
+                    <div class="row clearfix report-item ">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 column">
+                            <div class="row">
+                                <div class="col-md-3 report-date">
+                                    June 2015
+                                </div>
+                                <div id="21_name_homepage" class="col-md-6 pointer reportView"
+                                    
+                                        data-href="https://s3.amazonaws.com/tracxndocuments/MobileFinTechStartupLandscape_Jun-2015.pdf"
+                                         href="#report-modal-view"  data-target="#report-modal-view" data-toggle="modal" data-label="Mobile FinTech Startup Landscape"
+                                    
+                                >
+                                    Mobile FinTech Startup Landscape
+
+                                </div>
+                                <div class="col-md-3 download-report">
+                                
+                                    <span class="pointer link pull-right" data-href="https://s3.amazonaws.com/tracxndocuments/MobileFinTechStartupLandscape_Jun-2015.pdf" data-label="Mobile FinTech Startup Landscape">
+                                        <i class="fa fa-download valign-m download"></i>
+                                        <span class="download-text">Download</span>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span href="#report-modal-view" id="21_view_homepage" data-label="Mobile FinTech Startup Landscape" data-target="#report-modal-view" data-toggle="modal" class="pointer reportView " data-href="https://s3.amazonaws.com/tracxndocuments/MobileFinTechStartupLandscape_Jun-2015.pdf" data-label="Mobile FinTech Startup Landscape" data-hint="View">
+                                        <i class="fa fa-eye valign-m view download"></i>
+                                        <span class="download-text">View</span>
+                                    </span>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+                    
+                        <hr class="hr-report">
+                    
+                
+                    <div class="row clearfix report-item ">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 column">
+                            <div class="row">
+                                <div class="col-md-3 report-date">
+                                    April 2015
+                                </div>
+                                <div id="17_name_homepage" class="col-md-6 pointer reportView"
+                                    
+                                        data-href="https://s3.amazonaws.com/tracxndocuments/DronesStartupLandscape_Apr-2015.pdf"
+                                         href="#report-modal-view"  data-target="#report-modal-view" data-toggle="modal" data-label="Drones Startup Landscape"
+                                    
+                                >
+                                    Drones Startup Landscape
+
+                                </div>
+                                <div class="col-md-3 download-report">
+                                
+                                    <span class="pointer link pull-right" data-href="https://s3.amazonaws.com/tracxndocuments/DronesStartupLandscape_Apr-2015.pdf" data-label="Drones Startup Landscape">
+                                        <i class="fa fa-download valign-m download"></i>
+                                        <span class="download-text">Download</span>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span href="#report-modal-view" id="17_view_homepage" data-label="Drones Startup Landscape" data-target="#report-modal-view" data-toggle="modal" class="pointer reportView " data-href="https://s3.amazonaws.com/tracxndocuments/DronesStartupLandscape_Apr-2015.pdf" data-label="Drones Startup Landscape" data-hint="View">
+                                        <i class="fa fa-eye valign-m view download"></i>
+                                        <span class="download-text">View</span>
+                                    </span>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+                    
+                        <hr class="hr-report">
+                    
+                
+                    <div class="row clearfix report-item ">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 column">
+                            <div class="row">
+                                <div class="col-md-3 report-date">
+                                    March 2015
+                                </div>
+                                <div id="15_name_homepage" class="col-md-6 pointer reportView"
+                                    
+                                        data-href="https://s3.amazonaws.com/tracxndocuments/SubscriptionCommerceStartupLandscape_Mar-2015"
+                                         href="#report-modal-view"  data-target="#report-modal-view" data-toggle="modal" data-label="Subscription Commerce Startup Landscape"
+                                    
+                                >
+                                    Subscription Commerce Startup Landscape
+
+                                </div>
+                                <div class="col-md-3 download-report">
+                                
+                                    <span class="pointer link pull-right" data-href="https://s3.amazonaws.com/tracxndocuments/SubscriptionCommerceStartupLandscape_Mar-2015" data-label="Subscription Commerce Startup Landscape">
+                                        <i class="fa fa-download valign-m download"></i>
+                                        <span class="download-text">Download</span>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span href="#report-modal-view" id="15_view_homepage" data-label="Subscription Commerce Startup Landscape" data-target="#report-modal-view" data-toggle="modal" class="pointer reportView " data-href="https://s3.amazonaws.com/tracxndocuments/SubscriptionCommerceStartupLandscape_Mar-2015" data-label="Subscription Commerce Startup Landscape" data-hint="View">
+                                        <i class="fa fa-eye valign-m view download"></i>
+                                        <span class="download-text">View</span>
+                                    </span>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+                    
+                        <hr class="hr-report">
+                    
+                
+                    <div class="row clearfix report-item ">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 column">
+                            <div class="row">
+                                <div class="col-md-3 report-date">
+                                    February 2015
+                                </div>
+                                <div id="13_name_homepage" class="col-md-6 pointer reportView"
+                                    
+                                        data-href="https://s3.amazonaws.com/tracxndocuments/SunFeb15000000UTC2015Tracxn!_Docker_Ecosystem_Report.pdf"
+                                         href="#report-modal-view"  data-target="#report-modal-view" data-toggle="modal" data-label="Docker Ecosystem Startup Landscape"
+                                    
+                                >
+                                    Docker Ecosystem Startup Landscape
+
+                                </div>
+                                <div class="col-md-3 download-report">
+                                
+                                    <span class="pointer link pull-right" data-href="https://s3.amazonaws.com/tracxndocuments/SunFeb15000000UTC2015Tracxn!_Docker_Ecosystem_Report.pdf" data-label="Docker Ecosystem Startup Landscape">
+                                        <i class="fa fa-download valign-m download"></i>
+                                        <span class="download-text">Download</span>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span href="#report-modal-view" id="13_view_homepage" data-label="Docker Ecosystem Startup Landscape" data-target="#report-modal-view" data-toggle="modal" class="pointer reportView " data-href="https://s3.amazonaws.com/tracxndocuments/SunFeb15000000UTC2015Tracxn!_Docker_Ecosystem_Report.pdf" data-label="Docker Ecosystem Startup Landscape" data-hint="View">
+                                        <i class="fa fa-eye valign-m view download"></i>
+                                        <span class="download-text">View</span>
+                                    </span>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+                    
+                        <hr class="hr-report">
+                    
+                
+                    <div class="row clearfix report-item ">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 column">
+                            <div class="row">
+                                <div class="col-md-3 report-date">
+                                    February 2015
+                                </div>
+                                <div id="11_name_homepage" class="col-md-6 pointer reportView"
+                                    
+                                        data-href="https://s3.amazonaws.com/tracxndocuments/ThuFeb12000000UTC2015Tracxn_Smart_Homes_Feed_Report_Feb_2015.pdf"
+                                         href="#report-modal-view"  data-target="#report-modal-view" data-toggle="modal" data-label="Smart Homes Startup Landscape"
+                                    
+                                >
+                                    Smart Homes Startup Landscape
+
+                                </div>
+                                <div class="col-md-3 download-report">
+                                
+                                    <span class="pointer link pull-right" data-href="https://s3.amazonaws.com/tracxndocuments/ThuFeb12000000UTC2015Tracxn_Smart_Homes_Feed_Report_Feb_2015.pdf" data-label="Smart Homes Startup Landscape">
+                                        <i class="fa fa-download valign-m download"></i>
+                                        <span class="download-text">Download</span>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span href="#report-modal-view" id="11_view_homepage" data-label="Smart Homes Startup Landscape" data-target="#report-modal-view" data-toggle="modal" class="pointer reportView " data-href="https://s3.amazonaws.com/tracxndocuments/ThuFeb12000000UTC2015Tracxn_Smart_Homes_Feed_Report_Feb_2015.pdf" data-label="Smart Homes Startup Landscape" data-hint="View">
+                                        <i class="fa fa-eye valign-m view download"></i>
+                                        <span class="download-text">View</span>
+                                    </span>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+                    
+                        <hr class="hr-report">
+                    
+                
+                    <div class="row clearfix report-item ">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 column">
+                            <div class="row">
+                                <div class="col-md-3 report-date">
+                                    February 2015
+                                </div>
+                                <div id="9_name_homepage" class="col-md-6 pointer reportView"
+                                    
+                                        data-href="https://s3.amazonaws.com/tracxndocuments/ThuFeb05000000UTC2015Tracxn!_SharingEconomy_FeedReport(D1.322Jan2015).pdf"
+                                         href="#report-modal-view"  data-target="#report-modal-view" data-toggle="modal" data-label="Sharing Economy Startup Landscape"
+                                    
+                                >
+                                    Sharing Economy Startup Landscape
+
+                                </div>
+                                <div class="col-md-3 download-report">
+                                
+                                    <span class="pointer link pull-right" data-href="https://s3.amazonaws.com/tracxndocuments/ThuFeb05000000UTC2015Tracxn!_SharingEconomy_FeedReport(D1.322Jan2015).pdf" data-label="Sharing Economy Startup Landscape">
+                                        <i class="fa fa-download valign-m download"></i>
+                                        <span class="download-text">Download</span>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span href="#report-modal-view" id="9_view_homepage" data-label="Sharing Economy Startup Landscape" data-target="#report-modal-view" data-toggle="modal" class="pointer reportView " data-href="https://s3.amazonaws.com/tracxndocuments/ThuFeb05000000UTC2015Tracxn!_SharingEconomy_FeedReport(D1.322Jan2015).pdf" data-label="Sharing Economy Startup Landscape" data-hint="View">
+                                        <i class="fa fa-eye valign-m view download"></i>
+                                        <span class="download-text">View</span>
+                                    </span>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+                    
+                        <hr class="hr-report">
+                    
+                
+                    <div class="row clearfix report-item ">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 column">
+                            <div class="row">
+                                <div class="col-md-3 report-date">
+                                    February 2015
+                                </div>
+                                <div id="10_name_homepage" class="col-md-6 pointer reportView"
+                                    
+                                        data-href="https://s3.amazonaws.com/tracxndocuments/ThuFeb05000000UTC2015Tracxn_Global_SaaS_from_India.pdf"
+                                         href="#report-modal-view"  data-target="#report-modal-view" data-toggle="modal" data-label="Global SaaS from India Startup Landscape"
+                                    
+                                >
+                                    Global SaaS from India Startup Landscape
+
+                                </div>
+                                <div class="col-md-3 download-report">
+                                
+                                    <span class="pointer link pull-right" data-href="https://s3.amazonaws.com/tracxndocuments/ThuFeb05000000UTC2015Tracxn_Global_SaaS_from_India.pdf" data-label="Global SaaS from India Startup Landscape">
+                                        <i class="fa fa-download valign-m download"></i>
+                                        <span class="download-text">Download</span>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span href="#report-modal-view" id="10_view_homepage" data-label="Global SaaS from India Startup Landscape" data-target="#report-modal-view" data-toggle="modal" class="pointer reportView " data-href="https://s3.amazonaws.com/tracxndocuments/ThuFeb05000000UTC2015Tracxn_Global_SaaS_from_India.pdf" data-label="Global SaaS from India Startup Landscape" data-hint="View">
+                                        <i class="fa fa-eye valign-m view download"></i>
+                                        <span class="download-text">View</span>
+                                    </span>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+                    
+                        <hr class="hr-report">
+                    
+                
+                    <div class="row clearfix report-item ">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 column">
+                            <div class="row">
+                                <div class="col-md-3 report-date">
+                                    January 2015
+                                </div>
+                                <div id="8_name_homepage" class="col-md-6 pointer reportView"
+                                    
+                                        data-href="https://s3.amazonaws.com/tracxndocuments/SatJan10000000UTC2015Tracxn-MobileFirstEnterpriseApp-Jan2015.pdf"
+                                         href="#report-modal-view"  data-target="#report-modal-view" data-toggle="modal" data-label="Mobile First Enterprise App Startup Landscape"
+                                    
+                                >
+                                    Mobile First Enterprise App Startup Landscape
+
+                                </div>
+                                <div class="col-md-3 download-report">
+                                
+                                    <span class="pointer link pull-right" data-href="https://s3.amazonaws.com/tracxndocuments/SatJan10000000UTC2015Tracxn-MobileFirstEnterpriseApp-Jan2015.pdf" data-label="Mobile First Enterprise App Startup Landscape">
+                                        <i class="fa fa-download valign-m download"></i>
+                                        <span class="download-text">Download</span>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span href="#report-modal-view" id="8_view_homepage" data-label="Mobile First Enterprise App Startup Landscape" data-target="#report-modal-view" data-toggle="modal" class="pointer reportView " data-href="https://s3.amazonaws.com/tracxndocuments/SatJan10000000UTC2015Tracxn-MobileFirstEnterpriseApp-Jan2015.pdf" data-label="Mobile First Enterprise App Startup Landscape" data-hint="View">
+                                        <i class="fa fa-eye valign-m view download"></i>
+                                        <span class="download-text">View</span>
+                                    </span>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+                    
+                        <hr class="hr-report">
+                    
+                
+                    <div class="row clearfix report-item ">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 column">
+                            <div class="row">
+                                <div class="col-md-3 report-date">
+                                    December 2014
+                                </div>
+                                <div id="6_name_homepage" class="col-md-6 pointer reportView"
+                                    
+                                        data-href="https://s3.amazonaws.com/tracxndocuments/ThuDec04000000UTC2014Tracxn!-FoodTech.pdf"
+                                         href="#report-modal-view"  data-target="#report-modal-view" data-toggle="modal" data-label="FoodTech Startup Landscape"
+                                    
+                                >
+                                    FoodTech Startup Landscape
+
+                                </div>
+                                <div class="col-md-3 download-report">
+                                
+                                    <span class="pointer link pull-right" data-href="https://s3.amazonaws.com/tracxndocuments/ThuDec04000000UTC2014Tracxn!-FoodTech.pdf" data-label="FoodTech Startup Landscape">
+                                        <i class="fa fa-download valign-m download"></i>
+                                        <span class="download-text">Download</span>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span href="#report-modal-view" id="6_view_homepage" data-label="FoodTech Startup Landscape" data-target="#report-modal-view" data-toggle="modal" class="pointer reportView " data-href="https://s3.amazonaws.com/tracxndocuments/ThuDec04000000UTC2014Tracxn!-FoodTech.pdf" data-label="FoodTech Startup Landscape" data-hint="View">
+                                        <i class="fa fa-eye valign-m view download"></i>
+                                        <span class="download-text">View</span>
+                                    </span>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+                    
+                        <hr class="hr-report">
+                    
+                
+                    <div class="row clearfix report-item ">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 column">
+                            <div class="row">
+                                <div class="col-md-3 report-date">
+                                    November 2014
+                                </div>
+                                <div id="5_name_homepage" class="col-md-6 pointer reportView"
+                                    
+                                        data-href="https://s3.amazonaws.com/tracxndocuments/SatNov01000000UTC2014Tracxn_Internet_of_Things_Infrastructure_Feed_Overview_Nov_2014.pdf"
+                                         href="#report-modal-view"  data-target="#report-modal-view" data-toggle="modal" data-label="Internet of Things Infrastructure Startup Landscape"
+                                    
+                                >
+                                    Internet of Things Infrastructure Startup Landscape
+
+                                </div>
+                                <div class="col-md-3 download-report">
+                                
+                                    <span class="pointer link pull-right" data-href="https://s3.amazonaws.com/tracxndocuments/SatNov01000000UTC2014Tracxn_Internet_of_Things_Infrastructure_Feed_Overview_Nov_2014.pdf" data-label="Internet of Things Infrastructure Startup Landscape">
+                                        <i class="fa fa-download valign-m download"></i>
+                                        <span class="download-text">Download</span>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span href="#report-modal-view" id="5_view_homepage" data-label="Internet of Things Infrastructure Startup Landscape" data-target="#report-modal-view" data-toggle="modal" class="pointer reportView " data-href="https://s3.amazonaws.com/tracxndocuments/SatNov01000000UTC2014Tracxn_Internet_of_Things_Infrastructure_Feed_Overview_Nov_2014.pdf" data-label="Internet of Things Infrastructure Startup Landscape" data-hint="View">
+                                        <i class="fa fa-eye valign-m view download"></i>
+                                        <span class="download-text">View</span>
+                                    </span>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+                    
+                        <hr class="hr-report">
+                    
+                
+                    <div class="row clearfix report-item ">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 column">
+                            <div class="row">
+                                <div class="col-md-3 report-date">
+                                    November 2014
+                                </div>
+                                <div id="7_name_homepage" class="col-md-6 pointer reportView"
+                                    
+                                        data-href="https://s3.amazonaws.com/tracxndocuments/SatNov01000000UTC2014Tracxn!-IndiaConsumerDigitalStartupLandscape-Nov2014.pdf"
+                                         href="#report-modal-view"  data-target="#report-modal-view" data-toggle="modal" data-label="Emerging Markets - Consumer Digital in India"
+                                    
+                                >
+                                    Emerging Markets - Consumer Digital in India
+
+                                </div>
+                                <div class="col-md-3 download-report">
+                                
+                                    <span class="pointer link pull-right" data-href="https://s3.amazonaws.com/tracxndocuments/SatNov01000000UTC2014Tracxn!-IndiaConsumerDigitalStartupLandscape-Nov2014.pdf" data-label="Emerging Markets - Consumer Digital in India">
+                                        <i class="fa fa-download valign-m download"></i>
+                                        <span class="download-text">Download</span>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span href="#report-modal-view" id="7_view_homepage" data-label="Emerging Markets - Consumer Digital in India" data-target="#report-modal-view" data-toggle="modal" class="pointer reportView " data-href="https://s3.amazonaws.com/tracxndocuments/SatNov01000000UTC2014Tracxn!-IndiaConsumerDigitalStartupLandscape-Nov2014.pdf" data-label="Emerging Markets - Consumer Digital in India" data-hint="View">
+                                        <i class="fa fa-eye valign-m view download"></i>
+                                        <span class="download-text">View</span>
+                                    </span>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+                    
+                        <hr class="hr-report">
+                    
+                
+                    <div class="row clearfix report-item ">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 column">
+                            <div class="row">
+                                <div class="col-md-3 report-date">
+                                    October 2014
+                                </div>
+                                <div id="2_name_homepage" class="col-md-6 pointer reportView"
+                                    
+                                        data-href="https://s3.amazonaws.com/tracxndocuments/WedOct01000000UTC2014Tracxn-EnterpriseSecuritySectorSnapshot-Oct2014.pdf"
+                                         href="#report-modal-view"  data-target="#report-modal-view" data-toggle="modal" data-label="Enterprise Security Startup Landscape"
+                                    
+                                >
+                                    Enterprise Security Startup Landscape
+
+                                </div>
+                                <div class="col-md-3 download-report">
+                                
+                                    <span class="pointer link pull-right" data-href="https://s3.amazonaws.com/tracxndocuments/WedOct01000000UTC2014Tracxn-EnterpriseSecuritySectorSnapshot-Oct2014.pdf" data-label="Enterprise Security Startup Landscape">
+                                        <i class="fa fa-download valign-m download"></i>
+                                        <span class="download-text">Download</span>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span href="#report-modal-view" id="2_view_homepage" data-label="Enterprise Security Startup Landscape" data-target="#report-modal-view" data-toggle="modal" class="pointer reportView " data-href="https://s3.amazonaws.com/tracxndocuments/WedOct01000000UTC2014Tracxn-EnterpriseSecuritySectorSnapshot-Oct2014.pdf" data-label="Enterprise Security Startup Landscape" data-hint="View">
+                                        <i class="fa fa-eye valign-m view download"></i>
+                                        <span class="download-text">View</span>
+                                    </span>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+                    
+                        <hr class="hr-report">
+                    
+                
+                    <div class="row clearfix report-item ">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 column">
+                            <div class="row">
+                                <div class="col-md-3 report-date">
+                                    September 2014
+                                </div>
+                                <div id="4_name_homepage" class="col-md-6 pointer reportView"
+                                    
+                                        data-href="https://s3.amazonaws.com/tracxndocuments/MonSep01000000UTC2014Tracxn!-MobilePayments-Sep2014.pdf"
+                                         href="#report-modal-view"  data-target="#report-modal-view" data-toggle="modal" data-label="Mobile Payments Startup Landscape"
+                                    
+                                >
+                                    Mobile Payments Startup Landscape
+
+                                </div>
+                                <div class="col-md-3 download-report">
+                                
+                                    <span class="pointer link pull-right" data-href="https://s3.amazonaws.com/tracxndocuments/MonSep01000000UTC2014Tracxn!-MobilePayments-Sep2014.pdf" data-label="Mobile Payments Startup Landscape">
+                                        <i class="fa fa-download valign-m download"></i>
+                                        <span class="download-text">Download</span>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span href="#report-modal-view" id="4_view_homepage" data-label="Mobile Payments Startup Landscape" data-target="#report-modal-view" data-toggle="modal" class="pointer reportView " data-href="https://s3.amazonaws.com/tracxndocuments/MonSep01000000UTC2014Tracxn!-MobilePayments-Sep2014.pdf" data-label="Mobile Payments Startup Landscape" data-hint="View">
+                                        <i class="fa fa-eye valign-m view download"></i>
+                                        <span class="download-text">View</span>
+                                    </span>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+                    
+                        <hr class="hr-report">
+                    
+                
+                    <div class="row clearfix report-item ">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 column">
+                            <div class="row">
+                                <div class="col-md-3 report-date">
+                                    August 2014
+                                </div>
+                                <div id="1_name_homepage" class="col-md-6 pointer reportView"
+                                    
+                                        data-href="https://s3.amazonaws.com/tracxndocuments/FriAug01000000UTC2014Tracxn-SectorReport-Bitcoin-Aug2014.pdf"
+                                         href="#report-modal-view"  data-target="#report-modal-view" data-toggle="modal" data-label="Bitcoin Startup Landscape"
+                                    
+                                >
+                                    Bitcoin Startup Landscape
+
+                                </div>
+                                <div class="col-md-3 download-report">
+                                
+                                    <span class="pointer link pull-right" data-href="https://s3.amazonaws.com/tracxndocuments/FriAug01000000UTC2014Tracxn-SectorReport-Bitcoin-Aug2014.pdf" data-label="Bitcoin Startup Landscape">
+                                        <i class="fa fa-download valign-m download"></i>
+                                        <span class="download-text">Download</span>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span href="#report-modal-view" id="1_view_homepage" data-label="Bitcoin Startup Landscape" data-target="#report-modal-view" data-toggle="modal" class="pointer reportView " data-href="https://s3.amazonaws.com/tracxndocuments/FriAug01000000UTC2014Tracxn-SectorReport-Bitcoin-Aug2014.pdf" data-label="Bitcoin Startup Landscape" data-hint="View">
+                                        <i class="fa fa-eye valign-m view download"></i>
+                                        <span class="download-text">View</span>
+                                    </span>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+                    
+                        <hr class="hr-report">
+                    
+                
+                    <div class="row clearfix report-item ">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 column">
+                            <div class="row">
+                                <div class="col-md-3 report-date">
+                                    July 2014
+                                </div>
+                                <div id="3_name_homepage" class="col-md-6 pointer reportView"
+                                    
+                                        data-href="https://s3.amazonaws.com/tracxndocuments/TueJul01000000UTC2014SectorOverview-MobileMarketing-July2014.pdf"
+                                         href="#report-modal-view"  data-target="#report-modal-view" data-toggle="modal" data-label="Mobile Marketing - Deep Dive on Native Ads Startups"
+                                    
+                                >
+                                    Mobile Marketing - Deep Dive on Native Ads Startups
+
+                                </div>
+                                <div class="col-md-3 download-report">
+                                
+                                    <span class="pointer link pull-right" data-href="https://s3.amazonaws.com/tracxndocuments/TueJul01000000UTC2014SectorOverview-MobileMarketing-July2014.pdf" data-label="Mobile Marketing - Deep Dive on Native Ads Startups">
+                                        <i class="fa fa-download valign-m download"></i>
+                                        <span class="download-text">Download</span>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span href="#report-modal-view" id="3_view_homepage" data-label="Mobile Marketing - Deep Dive on Native Ads Startups" data-target="#report-modal-view" data-toggle="modal" class="pointer reportView " data-href="https://s3.amazonaws.com/tracxndocuments/TueJul01000000UTC2014SectorOverview-MobileMarketing-July2014.pdf" data-label="Mobile Marketing - Deep Dive on Native Ads Startups" data-hint="View">
+                                        <i class="fa fa-eye valign-m view download"></i>
+                                        <span class="download-text">View</span>
+                                    </span>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+                    
+                
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="subscribe-reports text-center">
+                            
+                            
+                                
+                                
+                                
+                            
+                            <form action="http://tracxn.com/newsletter/report" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"  target="_blank">
+                                <span class="report-subs-info"><strong>Subscribe to Tracxn Newsletter and Latest Startup Reports&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></span>
+                                <br><br>
+                                <input type="email" name="EMAIL" id="mce-EMAIL" class="report-subs-input" placeholder="Enter your email address">
+                                <input type="submit" class="subs-btn" value="SUBSCRIBE"  name="subscribe" id="mc-embedded-subscribe">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+        </section>
+    </section>
+
+
+<div class="modal fade" id="report-modal-view" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header" style="border-style: hidden">
+        <button type="button" class="close" data-dismiss="modal"
+                aria-hidden="true">
+            <span class="white fa-2x fa-inverse pull-right margin-20 ">&times;</span>
+        </button>
+    </div>
+
+    <div class="modal-dialog">
+        <div class="modal-content report-modal-content">
+            <iframe  id ="report-frame" src="#" width="97%"  height="93%" class="report-frame" ></iframe>
+        </div>
+    </div>
+</div>
+
+    <hr class="hr-center-thick solid-2p">
+    
+    
+
+    
+        <section id="media-mention">
+    <hr class="margin-t50 hr-center-thick solid-2p">
+    <!-- Media Mentions -->
+    <div class="images-div margin-trustedBy" >
+        <div class=""><h3 class="pagefont-medium f20">Read About Us On</h3></div>
+        <h2></h2>
+        <div class="container text-center">
+            
+                <a href="http://qz.com/401931/meet-the-startup-that-is-obsessed-with-tracking-every-other-startup-in-the-world/" target="_blank">
+                    <img style="width: 60px; height: 60px" src="https://s3.amazonaws.com/tracxnImages/8d57b6fe8eca86107aa86f48f8a27" class="resizable-logo"  alt="Quartz" title="Quartz">
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            
+                <a href="http://techcrunch.com/2015/04/28/series-a-tracxn/" target="_blank">
+                    <img style="width: 60px; height: 60px" src="https://s3.amazonaws.com/tracxnImages/6cf4c5d9483f132bf0fddc88e4238d" class="resizable-logo"  alt="TechCrunch" title="TechCrunch">
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            
+                <a href="https://pando.com/2014/04/16/former-sequoia-and-accell-vcs-launch-tracxn-a-bloomberg-like-database-for-the-startup-world/" target="_blank">
+                    <img style="width: 60px; height: 60px" src="https://s3.amazonaws.com/tracxnImages/aabc28f7dc9af9f313212e23a558885e" class="resizable-logo"  alt="Pando Daily" title="Pando Daily">
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            
+                <a href="http://www.livemint.com/Companies/PacLemGKVK6OB4MmVapDzN/Tracxn-raises-35-million-from-SAIF-Partners.html" target="_blank">
+                    <img style="width: 60px; height: 60px" src="https://s3.amazonaws.com/tracxnImages/6232927a9ec2893f2a157befbedb4d99" class="resizable-logo"  alt="Livemint" title="Livemint">
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            
+                <a href="https://www.techinasia.com/tracxn-helps-vcs-startup-discovery-discovered-saif-partners/" target="_blank">
+                    <img style="width: 60px; height: 60px" src="https://s3.amazonaws.com/tracxnImages/9e6846c218f365a89d6b44fd5cf9" class="resizable-logo"  alt="TechinAsia" title="TechinAsia">
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            
+                <a href="http://yourstory.com/2014/04/tracxn/" target="_blank">
+                    <img style="width: 60px; height: 60px" src="https://s3.amazonaws.com/tracxnImages/7ca2576de326242184a7f75cc71cf4" class="resizable-logo"  alt="Yourstory" title="Yourstory">
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            
+                <a href="http://inc42.com/startups/tracxn-bloomberg-gartner-startups-chat-abhishek-goyal-founder-tracxn/" target="_blank">
+                    <img style="width: 60px; height: 60px" src="https://s3.amazonaws.com/tracxnImages/b5a6a2c4bfbd895e104f41f6563cfe61" class="resizable-logo"  alt="Inc42" title="Inc42">
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            
+                <a href="http://economictimes.indiatimes.com/small-biz/startups/startup-analytics-firm-tracxn-gets-rs-21-7-cr-funding-from-saif-partners/articleshow/47105531.cms" target="_blank">
+                    <img style="width: 60px; height: 60px" src="https://s3.amazonaws.com/tracxnImages/f54c84cb4cfcb9277b3b29a4e442e7a0" class="resizable-logo"  alt="Economic Times" title="Economic Times">
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            
+        </div>
+    </div>
+</section>
+    
+
+    <div class="pad-t50"></div>
+    <hr class="margin-t50 hr-center-thick solid-2p">
+
+    
+        <section id="trusted-by">
+    <hr class="margin-t50 hr-center-thick solid-2p">
+    <!-- Trusted By-->
+    <div class="images-div margin-trustedBy" >
+        <h3 class="text-center pagefont-medium"><a href="#trusted-by" class="hashLinks">Trusted By</a></h3>
+        <div class="container text-center">
+            
+                <div class="logo-box trustedby-logo-margin" title="Accel Partners">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/69e28e957bb6858cd160493f763a922" class="resizable-logo" data-trustedByid="1" alt="Accel Partners" title="Accel Partners">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Andreessen Horowitz">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/e891fede897d5d981d921dfcc3d48e3e" class="resizable-logo" data-trustedByid="24" alt="Andreessen Horowitz" title="Andreessen Horowitz">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Menlo Ventures">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/a65a2c52afd792b380c76f3243e6fdbd" class="resizable-logo" data-trustedByid="42" alt="Menlo Ventures" title="Menlo Ventures">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="NEA">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/a52b90532dd7d11a342a1693bc607e6" class="resizable-logo" data-trustedByid="7" alt="NEA" title="NEA">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Lightspeed Venture Partners">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/6b57d60ae5fabcafdcbcc5be49f3fb" class="resizable-logo" data-trustedByid="5" alt="Lightspeed Venture Partners" title="Lightspeed Venture Partners">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="IDG Ventures">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/6aeabe1ac5903c55e7b69c7ffa496f40" class="resizable-logo" data-trustedByid="46" alt="IDG Ventures" title="IDG Ventures">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Flipkart">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/a977b7505ec79eb1f984e86427d98142" class="resizable-logo" data-trustedByid="44" alt="Flipkart" title="Flipkart">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Helion Venture Partner">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/cc282b4b3b7146c9a771d83d915fc7" class="resizable-logo" data-trustedByid="47" alt="Helion Venture Partner" title="Helion Venture Partner">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Nexus Venture Partners">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/6d938edfe3d7cf888180ebc494f8f086" class="resizable-logo" data-trustedByid="10" alt="Nexus Venture Partners" title="Nexus Venture Partners">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Matrix Partners">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/69a164e4a5e16546233949076e1cd1c" class="resizable-logo" data-trustedByid="40" alt="Matrix Partners" title="Matrix Partners">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="SAIF Partners">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/e3ddaffe2827d0edc73abf9c4b511" class="resizable-logo" data-trustedByid="4" alt="SAIF Partners" title="SAIF Partners">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Orios Venture Partners">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/1c77136aaae577dba4e6df552dbd56d" class="resizable-logo" data-trustedByid="61" alt="Orios Venture Partners" title="Orios Venture Partners">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Norwest Venture Partners">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/ba4bd84b6c1fe47ac256f8722f61b8b2" class="resizable-logo" data-trustedByid="30" alt="Norwest Venture Partners" title="Norwest Venture Partners">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Morado Venture Partners">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/26304e826a56e29a927dd9655a818b17" class="resizable-logo" data-trustedByid="38" alt="Morado Venture Partners" title="Morado Venture Partners">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Sequoia Capital">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/db3c7d2d995bce9aae1f7e60577c384e" class="resizable-logo" data-trustedByid="45" alt="Sequoia Capital" title="Sequoia Capital">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Coatue">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/ad1f89776ee43af1bb3f2d798f419860" class="resizable-logo" data-trustedByid="49" alt="Coatue" title="Coatue">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Elara Capital">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/34f2eb8a25dd04e433f7d35fb13f2a1" class="resizable-logo" data-trustedByid="50" alt="Elara Capital" title="Elara Capital">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Kalaari Capital">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/1de7561ffd2b60254deb4ad683ac777" class="resizable-logo" data-trustedByid="51" alt="Kalaari Capital" title="Kalaari Capital">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Mayfield Fund">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/82aac26cd53f9d79668dc082827089a1" class="resizable-logo" data-trustedByid="52" alt="Mayfield Fund" title="Mayfield Fund">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Naspers">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/c18ad7e3af87ed4817baba5867f2194" class="resizable-logo" data-trustedByid="53" alt="Naspers" title="Naspers">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Westbridge Capital">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/693f1d4b685faed62bebb5e3948c82c" class="resizable-logo" data-trustedByid="56" alt="Westbridge Capital" title="Westbridge Capital">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Fidelity Growth Partners">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/36b5c120bbdc0e54fb6257634d7d3f3" class="resizable-logo" data-trustedByid="58" alt="Fidelity Growth Partners" title="Fidelity Growth Partners">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Bertelsmann">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/5fc8176cfa818a01c8ca259545634d6" class="resizable-logo" data-trustedByid="59" alt="Bertelsmann" title="Bertelsmann">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Visionnaire Ventures">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/d5d987649fa748b2d809b25c6f83c43" class="resizable-logo" data-trustedByid="60" alt="Visionnaire Ventures" title="Visionnaire Ventures">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="IvyCap Ventures">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/1a2a1e503e69991f16e6767f4b5a6d8f" class="resizable-logo" data-trustedByid="62" alt="IvyCap Ventures" title="IvyCap Ventures">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Snapdeal">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/58f2831f56c26ff11ea65330ebb284" class="resizable-logo" data-trustedByid="69" alt="Snapdeal" title="Snapdeal">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Google Capital">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/3e5320e1bac62957431fe0344719d1a" class="resizable-logo" data-trustedByid="70" alt="Google Capital" title="Google Capital">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Falcon Edge Capital">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/b15b3cab1a694ed639def6e7193122c1" class="resizable-logo" data-trustedByid="71" alt="Falcon Edge Capital" title="Falcon Edge Capital">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Target">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/7ab73c94bffaebbfafde311d1c49b489" class="resizable-logo" data-trustedByid="72" alt="Target" title="Target">
+                    </div>
+                </div>
+            
+                <div class="logo-box trustedby-logo-margin" title="Comcast Ventures">
+                    <div class="image-box">
+                        <img src="https://s3.amazonaws.com/tracxnImages/b6aa7b5673b72a4ae59331411b1e5ef" class="resizable-logo" data-trustedByid="74" alt="Comcast Ventures" title="Comcast Ventures">
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</section>
+    
+
+    <div class="pad-t50"></div>
+    <div class=" modal fade" id="requestnow" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class=" modal-content">
+			<div class="modal-body">
+				<div class="container">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">&times;</button>
+				</div>
+				<div class="container">
+					<form>
+						<div class="form-group">
+							<label for="ondemand-email" id="ondemand-email-label">Email
+								address</label>
+							
+								<input type="email" class="login-input" id='ondemand-email'
+									placeholder="Enter your email address">
+							
+							
+						</div>
+						<div id="ondemand-info" class="text-center"></div>
+
+						<div class="form-group">
+							<label for="instruction" id="instruction-label">Instructions</label>
+							<textarea maxlength="250" id="instruction" rows="5" class="login-input"
+								placeholder="Interested in using Tracxn? Contact our sales team here."></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" id="ondemand" class="text-center login"
+								name="submit" value="Submit"
+								onclick='sectorsignup(this);return false;'>
+                            <img src="../s3.amazonaws.com/tracxnassets/assets/static/images/loading.gif" id="loading-image" class="hidden" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+    <div id="upgradeForProduct" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body no-padding bitterFont">
+                <div class="upgradeForProduct-heading-div text-center">
+                    <span class="pagefont-medium upgradeForProduct-heading" align="center">
+                        Contact Sales
+                    </span>
+                </div>
+                <div class="row upgradeForProduct-content-row">
+                        
+                            <div class="row">
+                                <form class="cssform center-it">
+                                    <h5 id="contactSales-info">
+                                        We will get in touch with you. Leave your email.
+                                    </h5>
+                                    <input type="text" class="form-control" id="contactSales-email" placeholder="Enter Your Official Email Address" value=""/>
+
+                                    <input type="submit" value="GET IN TOUCH" class="loginButton" id="contactSales" onclick="sectorsignup(this);return false;"/>
+                                </form>
+                            </div>
+                        
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="home-footer-div">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<div class="pagefont-big home-footer-heading">
+                    CONTACTS
+				</div>
+			</div>
+
+			<div class="text-center social-box-div">
+				<table class="social-box">
+					<tr>
+						<td class="social">
+							<div id="hi" class="fa fa-envelope" data-toggle="popover"
+								data-placement="top"></div>
+						</td>
+						
+						<td class="social"><a
+							target="_blank" href="https://twitter.com/tracxn"><i
+								class="fa fa-twitter"></i></a></td>
+						<td class="social"><a
+							target="_blank" href="https://www.facebook.com/Tracxn"><i
+								class="fa fa-facebook"></i></a></td>
+						<td class="social"><a target="_blank"
+							href="http://www.linkedin.com/company/tracxn"><i
+								class="fa fa-linkedin"></i></a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class=" text-center agreement-div">
+		<div class="text-center">
+			<a class="agreement-link"
+				type="button" onclick="getUserAgreement()"><h5>Privacy &
+					Terms</h5></a>
+		</div>
+	</div>
+</div>
+<div id="agreement" class="mytheme modal fade" tabindex="-1">
+	<div class="modal-dialog edit-company-modal">
+		<div class="modal-content">
+			<div class="modal-header no-padding"></div>
+		</div>
+	</div>
+</div>
+    <script src="../s3.amazonaws.com/tracxnassets/assets/tracxn-1.1/home-cd3a4dd395a471d3f6575efa8c3da22f.js" type="text/javascript" ></script>
+    <!--[if IE]>
+    <script src="http://s3.amazonaws.com/tracxnassets/assets/tracxn-1.1/IE9-b11ef31ffac979a37f00f87e5f1bb687.js" type="text/javascript" ></script>
+    <![endif]-->
+
+		
+	</div>
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41952435-1', 'tracxn.com');
+  ga('send', 'pageview');
+
+$(document).ready(logUrls);
+$(window).on('hashchange', logUrls);
+
+function logUrls(){
+    var title = $(document).find("title").text();
+    var url = location.href;
+    var inputJson = { "title" :title ,"url" :url};
+    $.ajax({
+        cache: false,
+        crossDomain: false,
+        url: "/monitor/logUrl",
+        async: false,
+        type:"POST",
+        data: JSON.stringify(inputJson),
+        dataType: 'json',
+        contentType: "application/json; charset=utf-8",
+
+        beforeSend:function(){
+            console.log("before sending request")
+        },
+        complete:function(event, xhr, options){
+            console.log("complete")
+        },
+        success:function(result){
+            console.log("Updated Successfully");
+        },
+        error: function(XHR, textStatus, errorThrown) {
+            console.log("error " + XHR.status)
+        }
+    });
+} 
+</script>
+
+
+
+</body>
+
+<!-- Mirrored from tracxn.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Sep 2015 17:37:33 GMT -->
+</html>
